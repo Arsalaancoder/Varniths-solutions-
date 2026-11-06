@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/varnith-symbol.png" />
+    <title>Varnith Global — HR Consulting, Talent Solutions & Technology</title>
+    <meta name="description" content="Connecting talent, learning and technology. Premier HR consulting, talent acquisition, corporate training, and digital transformation in Hyderabad." />
+    
+    <!-- Premium Fonts: Clash Grotesk & General Sans via Fontshare CDN, Inter via Google Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enforce light theme -->
+    <script>
+      (function() {
+        try {
+          localStorage.removeItem('vg-theme');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F5EFE4] text-[#4E493F] antialiased selection:bg-[#FFC94A] selection:text-[#231C0A] overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

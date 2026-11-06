@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EXACT WAYFARE DESIGN SYSTEM TOKENS (LIGHT PALETTE) */
+:root {
+  --color-sand: #F5EFE4;
+  --color-surface: #FCF9F3;
+  --color-shell: #ECE3D3;
+  --color-line: #E0D6C4;
+  --color-ink: #211D16;
+  --color-body: #4E493F;
+  --color-muted: #857E70;
+  --color-night: #211D16;
+  --color-night-deep: #1A1712;
+  --color-sun: #FFC94A;
+  --color-sun-light: #FFD978;
+  --color-sun-deep: #231C0A;
+  --color-white: #FFFFFF;
+}
+
+/* Global color transition matching Wayfare */
+html, body, nav, footer, section, div, p, h1, h2, h3, h4, span, a, button {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Wayfare Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Wayfare Glass Pill */
+.glass-pill {
+  background-color: rgba(252, 249, 243, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--color-line);
+}
+
+/* Wayfare Warm Photographic Veil */
+.veil-light {
+  background: linear-gradient(100deg, rgba(245, 239, 228, 0.92) 0%, rgba(245, 239, 228, 0.72) 42%, rgba(245, 239, 228, 0.18) 75%, rgba(245, 239, 228, 0) 100%);
+}
+
+/* Wordmark Clip effect at footer */
+.wordmark-clip {
+  mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 85%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 85%);
+}
