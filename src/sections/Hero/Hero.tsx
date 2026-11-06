@@ -67,7 +67,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0.001, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.9, ease: WAYFARE_CURVES.expo }}
-                className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-medium tracking-tight text-[#211D16] leading-[1.05] drop-shadow-[0_1px_3px_rgba(255,255,255,0.7)]"
+                className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-medium tracking-tight text-[#211D16] leading-[1.05]"
               >
                 Building better teams,<br />
                 empowering better futures.
@@ -78,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 initial={{ opacity: 0.001, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.45, duration: 0.9, ease: WAYFARE_CURVES.expo }}
-                className="font-sans text-base sm:text-lg md:text-xl text-[#211D16]/90 font-medium leading-relaxed max-w-xl drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]"
+                className="font-sans text-base sm:text-lg md:text-xl text-[#4E493F] leading-relaxed max-w-xl"
               >
                 We connect exceptional talent, professional development and intelligent technology to help businesses move forward.
               </motion.p>
