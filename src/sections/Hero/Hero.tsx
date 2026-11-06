@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { ButtonArrow } from '../../components/Buttons/ButtonArrow';
-import { Sparkles, ArrowUpRight } from 'lucide-react';
 import { WAYFARE_CURVES } from '../../animations/transitions';
 
 interface HeroProps {
@@ -40,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
         {/* Hero Content Container matching Wayfare Hero Row (padding: 150px 58px 104px on desktop) */}
         <div className="relative z-10 w-full px-5 sm:px-8 md:px-12 lg:px-16 pt-36 sm:pt-40 pb-12 sm:pb-16 lg:pb-24">
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-10 lg:gap-14">
+          <div className="max-w-7xl mx-auto">
             
             {/* Left Column: Hero Copy */}
             <div className="max-w-2xl lg:max-w-3xl space-y-6 md:space-y-8">
@@ -103,44 +101,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 />
               </motion.div>
             </div>
-
-            {/* Right Column: Anchored Next Departure Preview Card (Wayfare Next Departure) */}
-            <motion.div
-              initial={{ opacity: 0.001, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9, duration: 0.9, ease: WAYFARE_CURVES.expo }}
-              className="w-full sm:w-[340px] self-start lg:self-end flex-shrink-0"
-            >
-              <Link
-                to="/services/talent-acquisition"
-                className="block group rounded-2xl glass-pill bg-[#FCF9F3]/85 backdrop-blur-xl border border-[#E0D6C4]/70 p-5 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
-              >
-                {/* Header Tag with Pulse */}
-                <div className="flex items-center justify-between text-xs font-semibold text-[#857E70] uppercase tracking-wider mb-2">
-                  <div className="flex items-center gap-1.5 text-[#211D16]">
-                    <Sparkles className="w-3.5 h-3.5 text-[#FFC94A]" />
-                    <span>Enterprise Practice</span>
-                  </div>
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                </div>
-
-                {/* Title */}
-                <h3 className="font-display text-base font-semibold text-[#211D16] group-hover:text-[#211D16] transition-colors leading-snug">
-                  DevOps, SAP Security & Executive Search
-                </h3>
-
-                {/* Subtitle / Details */}
-                <p className="text-xs text-[#857E70] mt-1 leading-relaxed">
-                  Hyderabad HQ · Pan-India & Global Delivery Network
-                </p>
-
-                {/* Bottom Action Row */}
-                <div className="mt-4 pt-3 border-t border-[#E0D6C4]/50 flex items-center justify-between text-xs font-medium text-[#211D16]">
-                  <span>Explore Practice Details</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </div>
-              </Link>
-            </motion.div>
           </div>
         </div>
       </div>
